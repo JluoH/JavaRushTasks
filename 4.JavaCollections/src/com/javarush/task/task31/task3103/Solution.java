@@ -1,11 +1,13 @@
 package com.javarush.task.task31.task3103;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
 public class Solution {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Test");
     }
 }
 
