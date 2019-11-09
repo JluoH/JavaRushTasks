@@ -49082,3 +49082,8 @@ java.lang.NullPointerException
 2019-11-08 17:21:18 INFO  AbstractRestApiClient.startService(71) - EventsService started.
 2019-11-08 17:22:18 INFO  ApacheHttpClient.sendEvent(516) - responseCode = 200
 2019-11-08 17:23:18 INFO  ApacheHttpClient.sendEvent(516) - responseCode = 200
+2019-11-08 17:24:18 INFO  ApacheHttpClient.sendEvent(516) - responseCode = 200
+2019-11-08 17:25:18 INFO  ApacheHttpClient.sendEvent(516) - responseCode = 200
+2019-11-08 17:25:19 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2019-11-08 17:25:19 INFO  ApacheHttpClient.getTask(469) - responseCode = 200
