@@ -4,10 +4,16 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.Comparator;
+import java.util.TreeMap;
 
 public class Solution {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        System.out.println("Test");
+        TreeMap<String, String> map = new TreeMap<>(Comparator.comparingInt(String::length).thenComparing(Comparator.naturalOrder()));
+        map.put("Dan9", "2");
+        map.put("Aleg", "1");
+        map.entrySet().forEach(System.out::println);
+
     }
 }
 
