@@ -1,7 +1,8 @@
 package com.javarush.task.task31.task3102;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -10,7 +11,6 @@ import java.util.List;
 Находим все файлы
 */
 public class Solution {
-
     public static List<String> getFileTree(String root) throws IOException {
         ArrayList<File> list = new ArrayList();
         File file = new File(root);
@@ -31,10 +31,21 @@ public class Solution {
     }
 
     public static void main(String[] args) throws IOException {
-        ArrayList<String> kek = new ArrayList();
-        kek = (ArrayList<String>) getFileTree("C:\\Users\\evilr\\3D Objects\\Desktop\\heah");
-        for (String s : kek) {
-            System.out.println(s);
+        ServerSocket serverSocket = new ServerSocket(1221); //порт
+//в цикле обрабатываем входящие соединения.
+        while (true) {
+            //метод accept ждет, пока кто-то не подключится.
+            Socket socket = serverSocket.accept();
+            //читаем сообщение
+            InputStream inputStream = socket.getInputStream();
+            BufferedReader in = new BufferedReader(new InputStreamReader(inputStream));
+            String message = in.readLine();
+            //придумываем ответ – просто разворачиваем строку задом наперед
+            String reverseMessage = new StringBuilder(message).reverse().toString();
+            //отправляем ответ
+            OutputStream outputStream = socket.getOutputStream();
+            PrintWriter out = new PrintWriter(outputStream, true);
+            out.println(reverseMessage);
         }
     }
 }
