@@ -2080,3 +2080,22 @@
 2020-02-14 00:28:09 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
 
 2020-02-14 00:28:10 INFO  ApacheHttpClient.getTask(469) - responseCode = 200
+2020-02-15 15:00:27 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2020-02-15 15:00:27 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.35 ----------
+
+2020-02-15 15:00:27 INFO  ApacheHttpClient.createAsyncHttpClient(133) - 1 proxies selected. Type: DIRECT
+2020-02-15 15:00:28 INFO  ApacheHttpClient.<init>(91) - ApacheHttpClient was successfully instantiated.
+2020-02-15 15:00:28 INFO  ApacheHttpClient.testConnection(191) - responseCode = 200
+2020-02-15 15:00:28 INFO  ApacheHttpClient.testConnection(206) - result = true
+2020-02-15 15:00:28 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(583) - Waiting for server response.
+2020-02-15 15:00:29 INFO  ApacheHttpClient.refreshUserInfo(291) - responseCode = 200
+2020-02-15 15:00:29 INFO  ApacheHttpClient.refreshUserInfo(297) - User information received.
+2020-02-15 15:00:29 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-02-15 15:00:29 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-02-15 15:01:29 INFO  ApacheHttpClient.sendEvent(516) - responseCode = 200
+2020-02-15 15:02:29 INFO  ApacheHttpClient.sendEvent(516) - responseCode = 200
+2020-02-15 15:03:29 INFO  ApacheHttpClient.sendEvent(516) - responseCode = 200
+2020-02-15 15:04:29 INFO  ApacheHttpClient.sendEvent(516) - responseCode = 200
+2020-02-15 15:05:11 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2020-02-15 15:05:11 INFO  ApacheHttpClient.getTask(469) - responseCode = 200
